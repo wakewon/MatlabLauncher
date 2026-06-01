@@ -1,0 +1,282 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project MatlabLauncher.xcodeproj -scheme MatlabLauncher -configuration Debug -destination platform=macOS build
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  KeyboardShortcuts: https://github.com/sindresorhus/KeyboardShortcuts @ 2.4.0
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'MatlabLauncher' in project 'MatlabLauncher'
+        ➜ Explicit dependency on target 'KeyboardShortcuts' in project 'KeyboardShortcuts'
+    Target 'KeyboardShortcuts' in project 'KeyboardShortcuts'
+        ➜ Explicit dependency on target 'KeyboardShortcuts' in project 'KeyboardShortcuts'
+        ➜ Explicit dependency on target 'KeyboardShortcuts_KeyboardShortcuts' in project 'KeyboardShortcuts'
+    Target 'KeyboardShortcuts' in project 'KeyboardShortcuts'
+        ➜ Explicit dependency on target 'KeyboardShortcuts_KeyboardShortcuts' in project 'KeyboardShortcuts'
+    Target 'KeyboardShortcuts_KeyboardShortcuts' in project 'KeyboardShortcuts' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk /Users/weike/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.4-25E236-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache
+    cd /Users/weike/Developer/MatlabLauncher/MatlabLauncher.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -o /Users/weike/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.4-25E236-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache
+
+SwiftDriver MatlabLauncher normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MatlabLauncher -Onone @/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -F /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/PackageFrameworks -F /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.4-25E236-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache -output-file-map /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher_const_extract_protocols.json -Xcc -iquote -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-generated-files.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-own-target-headers.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher-969905998fc098d152a0b48958c51ba1-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-project-headers.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/include -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources-normal/arm64 -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources/arm64 -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher-Swift.h -working-directory /Users/weike/Developer/MatlabLauncher -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stddef-AQ3ME41F1V8VUQAW4CLA5UJC2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_float-AEXUOFF3L0MF7YR9FFX9O6MK4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_AvailabilityInternal-87VTEGG69W8TUCWPLZMPKK73S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/DeveloperToolsSupport-9OWLF9AO7J82YTC8RUSZWWDNL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_SwiftConcurrencyShims-9Y9R69VTCN7SIH1Y96EM7ZI2F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ptrcheck-3RLSQG6MDMUCQYSLH1EJEYX4D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/SwiftShims-VG7QFYDRAAKRG3ZBOMLWEUWX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ptrauth-A9T6OMY55FJX5BXF80FZQH77W.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stdbool-9DJA5KXZEGZ6UI1NZTQ1XKWU3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stdarg-6P4SX41V43R5G90B3IPFQ5FEI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_DarwinFoundation1-BVZQR1AU475FXT73OTTKQ2XVR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_DarwinFoundation2-CFESI38LC2Q6O85KD2RQQZ2B3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_limits-CA3W6A4YKCO385M9MSN911HZM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stdint-4DQG8W94EAWOYZIE7UDXIULJS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_tgmath-4STQGLGFU3FD00EFNUH8O6JUC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/sys_types-3U4U4VRIS59IF84N3075IY8YQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_DarwinFoundation3-B4ON4SSTHBMTO611ARO3SGLM1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/libDER-9CZG0FM8K9EOJR6FIR0GHJMXS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/OpenGL-30AF6UOTLPHKT8PW3J6W8Z01B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_stdatomic-3XWN9Y31MYMFIK2TZG1V7BYS8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_intrinsics-C3J4GT6N7O3H4BKUAOX0NG5L2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/_Builtin_inttypes-6MHSZDRIBLK443NYMNTX8CSGJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Darwin-E1H1S1K5ED36N1SG5YRJJIC0U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/simd-2GQOOZYDRSKOE13PJUV59DLY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/launch-2AYRP4VVYY2D0C5ZZD70MQBG7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/MachO-2LONCQ83VB556CEO3KW2ZCJ8Y.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CUPS-314RE0RM9C0GVUONZTHZP107P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/libkern-53ZG6ZGR5XQO77O7SNLSFP4SL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Spatial-AUHFAAKJJSYQN1BU2KFJV8YKF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ObjectiveC-30UYJP9ZIO001IJZF1EEA278W.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/os_object-B3QFMNC61IN1KO4Z0YBI6127N.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/os_workgroup-BREDJBGGRHG4UV5T00YI5DWL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Dispatch-EI8J27WHG80LSF5O01NU66VVP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreFoundation-J8LK2ICXS4L1NNW6R0XRA4ZI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/dnssd-2X1J666PZUWEJ7TDDJSS0T9BM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/XPC-E819AKAWLYBJLI2X0IFCUYJUS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/os-R4183EDIP55AAX4E5HPIYOBF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/IOKit-76PPYIZVZCUP4LVBA0556W33Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ColorSync-EXFV5ENRTYUR0Z9GR9NJEKBSR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Security-3YD64DZDLVJSODWMP0YMME8UT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CFNetwork-9Y7INFNN0XV4XYCDJLKBCJ7D8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/DiskArbitration-9O0WAU92N6XRDS94HS987CNGK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreGraphics-9I9X5CFVM9NF81TP9PJOK26PD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreServices-9UIUKQ7NVJXQ8K88P6PJCP8Z2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ImageIO-B05Y1PZNZIQXJT76DXSZAMBJE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreText-9VI44C0W9V2IUHPGCOV1GQUAP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Foundation-EXQYKK0S5GF3NSNZ64YAV46X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/ApplicationServices-ASFBPEPKU8YVRTTBVI3PCG4I0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Symbols-626SZO9TLYN3WTCU8XHVXSARC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreData-6A3ZXZKVLVOJ9W3L3VM3DYUTH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/DataDetection-45XZDQW9TGPG8UW8PFIE0K5VQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/IOSurface-B2MO6DWUN1FECKMC6JDL2NN8B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Accessibility-6WUNY64UW5UABL8JH3FDJOUFQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreTransferable-CAEY848XMKMD2DNL36G6T7NDC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/OSLog-CQWLY5A4G4CFPGU2BNROTRY9X.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Network-2WSLWDEAI3DQW7W59J2SPR0TJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/UserNotifications-67AJLW0QVVGEUD301J9TIXJ96.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/UniformTypeIdentifiers-3P1P4LNM7UAASI8ZIQHEPNAXE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Metal-A21NOT76B355UK1ETJIQC2YHJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Carbon-E2AZAD85EYD1YJ9HS2M770ROU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreVideo-5IDO1K50P5DD6DFW817YTNWBU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/CoreImage-1ELJBHVW1J5HB8DE9E6SER6W5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/QuartzCore-932T0WU2NOHZGGRTL38AHL3O8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/SwiftUICore-9I54BFZ6CE6GUAT9G693082CJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/AppKit-3IFB2JXG8LD8PHFK1N24JC242.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/SwiftUI-EJM9PD13239KZ38ZPSBHXUIEF.pcm
+
+SwiftCompile normal arm64 Compiling\ SettingsView.swift /Users/weike/Developer/MatlabLauncher/MatlabLauncher/Views/SettingsView.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+SwiftCompile normal arm64 /Users/weike/Developer/MatlabLauncher/MatlabLauncher/Views/SettingsView.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MatlabLauncher (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+EmitSwiftModule normal arm64 (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    
+
+SwiftCompile normal arm64 Compiling\ AppSettings.swift /Users/weike/Developer/MatlabLauncher/MatlabLauncher/Models/AppSettings.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+SwiftCompile normal arm64 /Users/weike/Developer/MatlabLauncher/MatlabLauncher/Models/AppSettings.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    
+
+SwiftCompile normal arm64 Compiling\ MenuBarView.swift /Users/weike/Developer/MatlabLauncher/MatlabLauncher/Views/MenuBarView.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+SwiftCompile normal arm64 /Users/weike/Developer/MatlabLauncher/MatlabLauncher/Views/MenuBarView.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MatlabLauncher (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+SwiftDriver\ Compilation\ Requirements MatlabLauncher normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MatlabLauncher -Onone @/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -F /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/PackageFrameworks -F /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.4-25E236-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache -output-file-map /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher_const_extract_protocols.json -Xcc -iquote -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-generated-files.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-own-target-headers.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher-969905998fc098d152a0b48958c51ba1-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-project-headers.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/include -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources-normal/arm64 -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources/arm64 -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher-Swift.h -working-directory /Users/weike/Developer/MatlabLauncher -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.swiftsourceinfo (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.swiftsourceinfo /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
+
+Copy /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.swiftmodule/arm64-apple-macos.swiftmodule /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.swiftmodule (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.swiftmodule /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.swiftmodule/arm64-apple-macos.swiftmodule
+
+Copy /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.swiftmodule/arm64-apple-macos.abi.json /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.abi.json (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.abi.json /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.swiftmodule/arm64-apple-macos.abi.json
+
+SwiftDriverJobDiscovery normal arm64 Compiling AppSettings.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+SwiftDriverJobDiscovery normal arm64 Compiling MenuBarView.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsView.swift (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+SwiftDriver\ Compilation MatlabLauncher normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MatlabLauncher -Onone @/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -target arm64-apple-macos14.0 -g -module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -F /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/PackageFrameworks -F /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.4-25E236-30f9ca8789b706f8bd3fc906a70d770f.sdkstatcache -output-file-map /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/weike/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher_const_extract_protocols.json -Xcc -iquote -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-generated-files.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-own-target-headers.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher-969905998fc098d152a0b48958c51ba1-VFS/all-product-headers.yaml -Xcc -iquote -Xcc /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-project-headers.hmap -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/include -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources-normal/arm64 -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources/arm64 -Xcc -I/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher-Swift.h -working-directory /Users/weike/Developer/MatlabLauncher -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher.debug.dylib normal (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos14.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -O0 -L/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -L/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -F/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/EagerLinkingTBDs/Debug -F/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/PackageFrameworks -F/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -filelist /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.LinkFileList -install_name @rpath/MatlabLauncher.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/../Frameworks -Xlinker -object_path_lto -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.swiftmodule @/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher-linker-args.resp -Wl,-no_warn_duplicate_libraries -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -Xlinker -no_adhoc_codesign -o /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher.debug.dylib -Xlinker -add_ast_path -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/KeyboardShortcuts.build/Debug/KeyboardShortcuts.build/Objects-normal/arm64/KeyboardShortcuts.swiftmodule @/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/KeyboardShortcuts.build/Debug/KeyboardShortcuts.build/Objects-normal/arm64/KeyboardShortcuts-linker-args.resp
+
+ConstructStubExecutorLinkFileList /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-ExecutorLinkFileList-normal-arm64.txt (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    construct-stub-executor-link-file-list /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'MatlabLauncher' from project 'MatlabLauncher')
+
+Ld /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher normal (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos14.0 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk -O0 -L/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -F/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/PackageFrameworks -F/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/../Frameworks -rdynamic -Xlinker -no_deduplicate -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher-ExecutorLinkFileList-normal-arm64.txt /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher.debug.dylib -Xlinker -no_adhoc_codesign -o /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher
+
+CopySwiftLibs /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher.debug.dylib --scan-folder /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/Frameworks --scan-folder /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/PlugIns --scan-folder /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/Library/SystemExtensions --scan-folder /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/Extensions --platform macosx --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+
+ExtractAppIntentsMetadata (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MatlabLauncher --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk --xcode-version 17E192 --platform-family macOS --deployment-target 14.0 --bundle-identifier com.weike.MatlabLauncher --output /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/Resources --target-triple arm64-apple-macos14.0 --binary-file /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher --dependency-file /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher_dependency_info.dat --stringsdata-file /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.SwiftFileList --metadata-file-list /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher.DependencyMetadataFileList --static-metadata-file-list /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher.DependencyStaticMetadataFileList --swift-const-vals-list /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/Objects-normal/arm64/MatlabLauncher.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-04-14 16:33:43.246 appintentsmetadataprocessor[63946:2874352] Starting appintentsmetadataprocessor export
+2026-04-14 16:33:43.250 appintentsmetadataprocessor[63946:2874352] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CodeSign /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher.debug.dylib (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/MatlabLauncher.debug.dylib
+
+CodeSign /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/__preview.dylib (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/__preview.dylib
+/Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app/Contents/MacOS/__preview.dylib: replacing existing signature
+
+CodeSign /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    
+    Signing Identity:     "Sign to Run Locally"
+    
+    /usr/bin/codesign --force --sign - --entitlements /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Intermediates.noindex/MatlabLauncher.build/Debug/MatlabLauncher.build/MatlabLauncher.app.xcent --timestamp\=none --generate-entitlement-der /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app
+
+Validate /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    builtin-validationUtility /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app -no-validate-extension -infoplist-subpath Contents/Info.plist
+
+RegisterWithLaunchServices /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app (in target 'MatlabLauncher' from project 'MatlabLauncher')
+    cd /Users/weike/Developer/MatlabLauncher
+    /System/Library/Frameworks/CoreServices.framework/Versions/Current/Frameworks/LaunchServices.framework/Versions/Current/Support/lsregister -f -R -trusted /Users/weike/Library/Developer/Xcode/DerivedData/MatlabLauncher-dosfnkekbvqazeezusxshxbofzwd/Build/Products/Debug/MatlabLauncher.app
+
+** BUILD SUCCEEDED **
+

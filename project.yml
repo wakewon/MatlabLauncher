@@ -1,0 +1,56 @@
+name: MatlabLauncher
+options:
+  bundleIdPrefix: io.github.wakewon
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    ENABLE_HARDENED_RUNTIME: false
+
+packages:
+  KeyboardShortcuts:
+    url: https://github.com/sindresorhus/KeyboardShortcuts
+    from: 2.0.0
+
+targets:
+  MatlabLauncher:
+    type: application
+    platform: macOS
+    sources:
+      - MatlabLauncher
+    dependencies:
+      - package: KeyboardShortcuts
+      - target: mlm
+    postBuildScripts:
+      - name: Bundle mlm CLI
+        script: |
+          mkdir -p "$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH"
+          cp -f "$TARGET_BUILD_DIR/mlm" "$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/"
+    settings:
+      base:
+        PRODUCT_NAME: MatlabLauncher
+        INFOPLIST_FILE: MatlabLauncher/Info.plist
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        ENABLE_APP_SANDBOX: false
+        SWIFT_STRICT_CONCURRENCY: targeted
+    info:
+      path: MatlabLauncher/Info.plist
+
+  mlm:
+    type: tool
+    platform: macOS
+    sources:
+      - mlm
+    settings:
+      base:
+        PRODUCT_NAME: mlm
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        SWIFT_STRICT_CONCURRENCY: targeted
+    dependencies: []

@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2582EB06E581B1B1586BB92D /* CreateJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA33ABEC5838C76896808D4 /* CreateJobView.swift */; };
+		2E45FC69764E8E922199D250 /* mlm in Resources */ = {isa = PBXBuildFile; fileRef = D418B3AE979FE561B5B9DAAC /* mlm */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		416878CF7F942536D2967122 /* MatlabLauncherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D49E24C221FD12872CA1B2F /* MatlabLauncherApp.swift */; };
+		43EE5ACE2910CB178743C7F6 /* MATLABDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719C51D752CEC27112E2C68E /* MATLABDetector.swift */; };
+		4E6C6DB62ABBC2BCEC8D8B7F /* ProcessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F139489E73EE0FF28F0CE123 /* ProcessManager.swift */; };
+		5FBEC656C7BD08B1DC4DCD5F /* JobRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F44AD367820E478AC937B0 /* JobRepository.swift */; };
+		670CAF6CBE0ED72DBC70847C /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982666CFF1F19057707AD47D /* Components.swift */; };
+		72953B0CBCE121497037B9B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D872A76E23C7D0938DEBBC /* main.swift */; };
+		7E87F9A178ACF830AD01230E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB92C511386703E1811D1A /* AppSettings.swift */; };
+		8255679A8F59F490DBDC888D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440F0518F6889E3D4C45E93A /* SettingsView.swift */; };
+		8E899A567B3F42AA54E15942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92A5C663649EE88A120828F /* Assets.xcassets */; };
+		9C097F32DA86F52E76C28023 /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC74D5A7528B87ED4329EA /* HTTPServer.swift */; };
+		A628C163162416FF439BD1DC /* HeartbeatMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD02864242AEA65747A25DC /* HeartbeatMonitor.swift */; };
+		C7EAD6A388A87704FFFF5D4B /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 07E4BEE4B17BE85B848566CB /* KeyboardShortcuts */; };
+		C828C4FFD2287A863FAD0F99 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA0FC8068550C3206F2BAB1 /* MenuBarView.swift */; };
+		D5E59E2FDC2EEF49B777DF8E /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E7DF96A3CC6973DC63D60 /* Job.swift */; };
+		D5FC2445E39328CE866B7611 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D259EE17A07BC9E9C0FA572 /* APIRouter.swift */; };
+		DFACA2E892C8CF85BA11123A /* KeyboardShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A41BBBCEE0998DB8C6AD475 /* KeyboardShortcuts.swift */; };
+		E0B52150D6EB4D8CA5A1CF3A /* JobScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47401C6FB0BEC08E82D71CF /* JobScheduler.swift */; };
+		E463A0184644F51901A18409 /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC809B592589FBE1F193DAC /* MainWindowView.swift */; };
+		EDABCD282B26860DC3CCE247 /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB55DB406C6ABF4F5B189C3 /* JobDetailView.swift */; };
+		F65D324A4576FD5AF7065959 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6788005786BA1F39F27D7D26 /* NotificationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE50A64A21B87059FA06E7E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4287EBFEEADDCFA6DBAFFDF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6163015F4F76823A0BB8AEB7;
+			remoteInfo = mlm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CD02864242AEA65747A25DC /* HeartbeatMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartbeatMonitor.swift; sourceTree = "<group>"; };
+		2D49E24C221FD12872CA1B2F /* MatlabLauncherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatlabLauncherApp.swift; sourceTree = "<group>"; };
+		3AA33ABEC5838C76896808D4 /* CreateJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJobView.swift; sourceTree = "<group>"; };
+		3E2E7DF96A3CC6973DC63D60 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		440F0518F6889E3D4C45E93A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4BC809B592589FBE1F193DAC /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		4D259EE17A07BC9E9C0FA572 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		5F7847AC94D2D2125DF9C8ED /* MatlabLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatlabLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6788005786BA1F39F27D7D26 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		6B3A417EABEDD810B76F1278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		719C51D752CEC27112E2C68E /* MATLABDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATLABDetector.swift; sourceTree = "<group>"; };
+		982666CFF1F19057707AD47D /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		9A41BBBCEE0998DB8C6AD475 /* KeyboardShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcuts.swift; sourceTree = "<group>"; };
+		A3CC74D5A7528B87ED4329EA /* HTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServer.swift; sourceTree = "<group>"; };
+		A3F44AD367820E478AC937B0 /* JobRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRepository.swift; sourceTree = "<group>"; };
+		BFA0FC8068550C3206F2BAB1 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		C5DB92C511386703E1811D1A /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		CAB55DB406C6ABF4F5B189C3 /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		D418B3AE979FE561B5B9DAAC /* mlm */ = {isa = PBXFileReference; includeInIndex = 0; path = mlm; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D872A76E23C7D0938DEBBC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E47401C6FB0BEC08E82D71CF /* JobScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobScheduler.swift; sourceTree = "<group>"; };
+		E92A5C663649EE88A120828F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F139489E73EE0FF28F0CE123 /* ProcessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A5165B61413F7DE1B2EF080 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7EAD6A388A87704FFFF5D4B /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0088CA48FF1A0AE3198D1E75 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2D49E24C221FD12872CA1B2F /* MatlabLauncherApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2A47F2F88D90C9423EEB1D8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB5A0598A4BCD78F5213C2C2 /* Components */,
+				3AA33ABEC5838C76896808D4 /* CreateJobView.swift */,
+				CAB55DB406C6ABF4F5B189C3 /* JobDetailView.swift */,
+				4BC809B592589FBE1F193DAC /* MainWindowView.swift */,
+				BFA0FC8068550C3206F2BAB1 /* MenuBarView.swift */,
+				440F0518F6889E3D4C45E93A /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		412A7C2196F5F100F981B306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F7847AC94D2D2125DF9C8ED /* MatlabLauncher.app */,
+				D418B3AE979FE561B5B9DAAC /* mlm */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		449F89ECC8C6DA8B61A763F1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4D259EE17A07BC9E9C0FA572 /* APIRouter.swift */,
+				A3CC74D5A7528B87ED4329EA /* HTTPServer.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6E495E8C6A354F6686DC7DD8 = {
+			isa = PBXGroup;
+			children = (
+				8FD7A1057950168EB8945B50 /* MatlabLauncher */,
+				A9DE9E0F8DDF5FA576B26BA4 /* mlm */,
+				412A7C2196F5F100F981B306 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BB458DC9ACA8B3255AEB3FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5DB92C511386703E1811D1A /* AppSettings.swift */,
+				3E2E7DF96A3CC6973DC63D60 /* Job.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8FD7A1057950168EB8945B50 /* MatlabLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				449F89ECC8C6DA8B61A763F1 /* API */,
+				0088CA48FF1A0AE3198D1E75 /* App */,
+				C131C2E664EE4F86773CCEF2 /* Core */,
+				7BB458DC9ACA8B3255AEB3FB /* Models */,
+				C5C4CAF0CF420262CE9317BB /* Notifications */,
+				9F6E0EA8F4365453D0F6C76B /* Utilities */,
+				2A47F2F88D90C9423EEB1D8D /* Views */,
+				E92A5C663649EE88A120828F /* Assets.xcassets */,
+				6B3A417EABEDD810B76F1278 /* Info.plist */,
+			);
+			path = MatlabLauncher;
+			sourceTree = "<group>";
+		};
+		9F6E0EA8F4365453D0F6C76B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9A41BBBCEE0998DB8C6AD475 /* KeyboardShortcuts.swift */,
+				719C51D752CEC27112E2C68E /* MATLABDetector.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A9DE9E0F8DDF5FA576B26BA4 /* mlm */ = {
+			isa = PBXGroup;
+			children = (
+				D6D872A76E23C7D0938DEBBC /* main.swift */,
+			);
+			path = mlm;
+			sourceTree = "<group>";
+		};
+		C131C2E664EE4F86773CCEF2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0CD02864242AEA65747A25DC /* HeartbeatMonitor.swift */,
+				A3F44AD367820E478AC937B0 /* JobRepository.swift */,
+				E47401C6FB0BEC08E82D71CF /* JobScheduler.swift */,
+				F139489E73EE0FF28F0CE123 /* ProcessManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C5C4CAF0CF420262CE9317BB /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				6788005786BA1F39F27D7D26 /* NotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		CB5A0598A4BCD78F5213C2C2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				982666CFF1F19057707AD47D /* Components.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF3646DE032EFA51DC8DB03 /* MatlabLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FFA75DACA2F72B1EEED6A90 /* Build configuration list for PBXNativeTarget "MatlabLauncher" */;
+			buildPhases = (
+				9D0E2001403FB8EACD61D895 /* Sources */,
+				158FF9423AF7129614ACFAB8 /* Resources */,
+				3A5165B61413F7DE1B2EF080 /* Frameworks */,
+				0D7991DEC34ADF1368ED0B4D /* Bundle mlm CLI */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86EB1E320CB3E1EBCF708A5C /* PBXTargetDependency */,
+			);
+			name = MatlabLauncher;
+			packageProductDependencies = (
+				07E4BEE4B17BE85B848566CB /* KeyboardShortcuts */,
+			);
+			productName = MatlabLauncher;
+			productReference = 5F7847AC94D2D2125DF9C8ED /* MatlabLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6163015F4F76823A0BB8AEB7 /* mlm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A889927D912EF621C22E6737 /* Build configuration list for PBXNativeTarget "mlm" */;
+			buildPhases = (
+				4A20E99371D4630BF9F298DC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mlm;
+			packageProductDependencies = (
+			);
+			productName = mlm;
+			productReference = D418B3AE979FE561B5B9DAAC /* mlm */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4287EBFEEADDCFA6DBAFFDF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2CF3646DE032EFA51DC8DB03 = {
+						ProvisioningStyle = Manual;
+					};
+					6163015F4F76823A0BB8AEB7 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 4F9FF694A1744D0431F6D9F3 /* Build configuration list for PBXProject "MatlabLauncher" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 6E495E8C6A354F6686DC7DD8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6F1E18EA744A7005C5619546 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 412A7C2196F5F100F981B306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF3646DE032EFA51DC8DB03 /* MatlabLauncher */,
+				6163015F4F76823A0BB8AEB7 /* mlm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		158FF9423AF7129614ACFAB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E899A567B3F42AA54E15942 /* Assets.xcassets in Resources */,
+				2E45FC69764E8E922199D250 /* mlm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D7991DEC34ADF1368ED0B4D /* Bundle mlm CLI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle mlm CLI";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir -p \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\ncp -f \"$TARGET_BUILD_DIR/mlm\" \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A20E99371D4630BF9F298DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72953B0CBCE121497037B9B3 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D0E2001403FB8EACD61D895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FC2445E39328CE866B7611 /* APIRouter.swift in Sources */,
+				7E87F9A178ACF830AD01230E /* AppSettings.swift in Sources */,
+				670CAF6CBE0ED72DBC70847C /* Components.swift in Sources */,
+				2582EB06E581B1B1586BB92D /* CreateJobView.swift in Sources */,
+				9C097F32DA86F52E76C28023 /* HTTPServer.swift in Sources */,
+				A628C163162416FF439BD1DC /* HeartbeatMonitor.swift in Sources */,
+				D5E59E2FDC2EEF49B777DF8E /* Job.swift in Sources */,
+				EDABCD282B26860DC3CCE247 /* JobDetailView.swift in Sources */,
+				5FBEC656C7BD08B1DC4DCD5F /* JobRepository.swift in Sources */,
+				E0B52150D6EB4D8CA5A1CF3A /* JobScheduler.swift in Sources */,
+				DFACA2E892C8CF85BA11123A /* KeyboardShortcuts.swift in Sources */,
+				43EE5ACE2910CB178743C7F6 /* MATLABDetector.swift in Sources */,
+				E463A0184644F51901A18409 /* MainWindowView.swift in Sources */,
+				416878CF7F942536D2967122 /* MatlabLauncherApp.swift in Sources */,
+				C828C4FFD2287A863FAD0F99 /* MenuBarView.swift in Sources */,
+				F65D324A4576FD5AF7065959 /* NotificationManager.swift in Sources */,
+				4E6C6DB62ABBC2BCEC8D8B7F /* ProcessManager.swift in Sources */,
+				8255679A8F59F490DBDC888D /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86EB1E320CB3E1EBCF708A5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6163015F4F76823A0BB8AEB7 /* mlm */;
+			targetProxy = AE50A64A21B87059FA06E7E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		083A601ECEA8869589B8F05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = MatlabLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.wakewon.MatlabLauncher;
+				PRODUCT_NAME = MatlabLauncher;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+			};
+			name = Debug;
+		};
+		301B5B985C21889877A4C75D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		309E14F021D9F75EB587661C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.wakewon.mlm;
+				PRODUCT_NAME = mlm;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+			};
+			name = Release;
+		};
+		42F179913E8BECE94823A777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.wakewon.mlm;
+				PRODUCT_NAME = mlm;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+			};
+			name = Debug;
+		};
+		9DCAF81CBBBFF99DEAAAA1EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		C7C26A410C97FE2D4D27B4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = MatlabLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.wakewon.MatlabLauncher;
+				PRODUCT_NAME = MatlabLauncher;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FFA75DACA2F72B1EEED6A90 /* Build configuration list for PBXNativeTarget "MatlabLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083A601ECEA8869589B8F05E /* Debug */,
+				C7C26A410C97FE2D4D27B4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4F9FF694A1744D0431F6D9F3 /* Build configuration list for PBXProject "MatlabLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301B5B985C21889877A4C75D /* Debug */,
+				9DCAF81CBBBFF99DEAAAA1EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A889927D912EF621C22E6737 /* Build configuration list for PBXNativeTarget "mlm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F179913E8BECE94823A777 /* Debug */,
+				309E14F021D9F75EB587661C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F1E18EA744A7005C5619546 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07E4BEE4B17BE85B848566CB /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F1E18EA744A7005C5619546 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4287EBFEEADDCFA6DBAFFDF3 /* Project object */;
+}
