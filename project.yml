@@ -39,6 +39,7 @@ targets:
         CODE_SIGN_STYLE: Manual
         ENABLE_APP_SANDBOX: false
         SWIFT_STRICT_CONCURRENCY: targeted
+        ASSETCATALOG_COMPILER_APPICON_NAME: MatlabLauncher
     info:
       path: MatlabLauncher/Info.plist
 

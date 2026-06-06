@@ -65,21 +65,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "✅ App installed to /Applications/MatlabLauncher.app"
 fi
 
-# Symlink CLI
-INSTALL_DIR="$HOME/bin"
-mkdir -p "$INSTALL_DIR"
-ln -sf "$MLM_PATH" "$INSTALL_DIR/mlm"
-echo "✅ CLI symlinked to $INSTALL_DIR/mlm"
-
-# Check PATH
-if [[ ":$PATH:" != *":$INSTALL_DIR:"* ]]; then
-    echo ""
-    echo "⚠️  $INSTALL_DIR is not in your PATH."
-    echo "   Add this to your ~/.zshrc:"
-    echo "   export PATH=\"\$HOME/bin:\$PATH\""
-fi
 
 echo ""
 echo "=== Done ==="
 echo "Launch: open /Applications/MatlabLauncher.app  (or from build dir)"
-echo "CLI:    mlm --help"
